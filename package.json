@@ -1,0 +1,13 @@
+{
+    "name": "Car-Management",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "concurrently": "^7.6.0",
+        "dotenv": "^16.4.5"
+    },
+    "scripts": {
+        "start": "concurrently \"npm run start --prefix frontend\" \"npm run dev --prefix backend\"",
+        "dev": "node backend/app.js"
+    }
+}
